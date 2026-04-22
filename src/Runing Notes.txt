@@ -1,0 +1,328 @@
+
+***************************************
+Selenium Season -3
+***************************************
+
+
+**************************
+Day - Project 1
+**************************
+
+Project 1 :
+
+QA 
+
+https://adactinhotelapp.com/
+
+UAT :
+
+https://adactinhotelapp.com/HotelAppBuild2/
+
+Project Structure :
+
+src/main/java
+		|
+		com.adactinhotelapp.factory
+		         -DriverFactory
+		|
+		com.adactinhotelapp.pages
+				 - LoginPage
+				 - RegistratrionPage
+				 - ForgotPasswordPage 
+				 :
+				 :
+				 
+		|
+		com.adactinhotelapp.listeners
+		            - TestNGListener
+		|
+		com.adactinhotelapp.utils 
+		            - ElementUtil
+					- ExcelUtil
+					- JavaScriptUtil
+					- StringUtil
+		|
+		com.adactinhotelapp.exceptions
+					- FrameworkExceptions
+		|
+		com.adactinhotelapp.constants
+					-AppConstants
+		
+	
+src/main/resources
+
+src/test/java
+		|
+		com.adactinhotelapp.base
+					-BaseTest
+		|
+		com.adactinhotelapp.tests
+					- ValidateLogin
+					- ValidateBookingHOtel
+					:
+					:
+					
+src/test/resources
+		|
+		config
+		  - config.qa.properties
+		  - config.uat.properties 
+		|
+		testdata 
+		   |
+		   excels
+		   - MasterTestData.xlsx 
+		   |
+		   jsons
+		   - Repsonse.json 
+		|
+		testrunners
+		    - smoke.xml
+			- regression.xml 
+			
+screenshots
+reports 
+
+=========================================
+Data Paramterization in TestNG
+using @DataProvider 
+
+
+
+
+------------------------------------------------------
+-----------------------------------------
+Day60 - 26th September  - Friday
+----------------------------------------- 
+
+standard POM implementation :
+
+Element Locators : 
+
+private final By usernameTextbox=By.xpath("//input[@name='username']");
+
+initialization :
+
+done using findElement()
+
+Action Methods : 
+
+public void usernameTextbox(String text)
+	{
+		elementUtils.getElement(usernameTextbox).sendKeys(text);
+	}
+	
+
+POM implementation using Page Factory: A more conveninent Implementation
+
+Elements  : 
+
+@FindBy Annotation 
+
+Initialization :
+
+initElements() --> static method present Page Factory
+
+
+Lazy Initlization : This will improve performance , especially on pages with many elements 
+
+@CacheLookUp annotation 
+
+**********************************
+Reporting Mechanism
+**********************************
+3rd Party 
+
+Extent Reports / ChainTest reports 
+
+Deprecation Notice
+ExtentReports is being sunset and will be replaced by ChainTest Framework.
+
+
+-----------------------------------------
+Day 62 - 29th September  - Monday
+-----------------------------------------
+
+Allure reports : 
+
+https://allurereport.org/docs/install/
+
+download Power shell :
+
+https://learn.microsoft.com/en-us/powershell/
+
+
+********************************************
+Project -2
+********************************************
+BDD 
+Cucumber API 
+Page Object Model 
+Junit 
+
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+
+
+
+Feature: OrangeHRM Login
+  As a user of OrangeHRM
+  I want to login to the system
+  So that I can access my dashboard securely
+
+  Background:
+    Given I am on the OrangeHRM login page
+
+  @ValidLogin
+  Scenario: Successful login with valid credentials
+    When I enter username "Admin"
+    And I enter password "admin123"
+    And I click the Login button
+    Then I should be redirected to the dashboard
+    And I should see the user profile icon
+
+  @InvalidLogin
+  Scenario: Login with invalid username
+    When I enter username "WrongUser"
+    And I enter password "admin123"
+    And I click the Login button
+    Then I should see an error message "Invalid credentials"
+
+  @InvalidLogin
+  Scenario: Login with invalid password
+    When I enter username "Admin"
+    And I enter password "wrongPass"
+    And I click the Login button
+    Then I should see an error message "Invalid credentials"
+
+  @EmptyFields
+  Scenario: Attempt login with empty fields
+    When I click the Login button
+    Then I should see validation messages for username and password
+
+  @EmptyFields
+  Scenario: Attempt login with only username
+    When I enter username "Admin"
+    And I leave the password field empty
+    And I click the Login button
+    Then I should see a validation message for password
+
+  @EmptyFields
+  Scenario: Attempt login with only password
+    When I leave the username field empty
+    And I enter password "admin123"
+    And I click the Login button
+    Then I should see a validation message for username
+
+  @ForgotPassword
+  Scenario: Verify Forgot Password link
+    When I click on the "Forgot your password?" link
+    Then I should be redirected to the password reset page
+
+  @Logout
+  Scenario: Successful logout after login
+    When I enter username "Admin"
+    And I enter password "admin123"
+    And I click the Login button
+    And I click the Logout link
+    Then I should be redirected to the login page
+
+  @Security
+  Scenario: Access dashboard without login
+    Given I navigate directly to the dashboard URL
+    Then I should be redirected to the login page
+
+ 
+-----------------------------------------
+Day 63 - 30th September  - Tuesday
+-----------------------------------------
+
+
+Gherkin :
+
+
+Given -> pre conditions
+When -> some action
+Then  -> validation 
+
+
+add 2 cucumber dependencies 
+
+cucumber -java
+cuucmber - junit 
+
+and 1 selenium dependency 
+
+------------------------------------
+hooks in java 
+
+@Before 
+
+@After 
+
+
+
+
+@Given("user is on {string}")
+public void user_is_on(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("validate title to be {string}")
+public void validate_title_to_be(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user enters text into textbox {string} {string}")
+public void user_enters_text_into_textbox(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user clicks {string}")
+public void user_clicks(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Feature: Hotel reservation date validation
+
+  Scenario: Verify that check-out date cannot be earlier than check-in date
+    Given the user launches the hotel reservation application "http://adactinhotelapp.com/"
+    And the user logs in with username "{test username}" and password "{test password}"
+    When the user selects location "Sydney"
+    And the user selects hotel "Hotel Creek"
+    And the user selects room type "Standard"
+    And the user selects number of rooms "1"
+    And the user enters check-in date as "today + 7 days"
+    And the user enters check-out date as "today + 5 days"
+    And the user clicks on the search button
+    Then the system should display an error message "Check-In date should not be later than Check-Out date"
+
+
+-----------------------------------------
+Day 64 - 03rd October 
+-----------------------------------------
+
+Git - Local 
+
+Git hub - cloud based where we store the versions 
+
+https://git-scm.com/downloads
+
+
+Github : 
+
+need to create an accountin github 
+
+Aditya Vamsi
+av832021@gmail.com
+
+
+Newpass@123369
+
+// new team member 
+
+1.get repo url 
+2. create a folder in your local 
+3. 

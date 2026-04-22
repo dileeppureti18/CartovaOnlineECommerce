@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.adactinhotelapp.tests.SubscriptionInCartTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="teardown"/>
+          <include name="appLaunch"/>
+          <include name="subscriptionInCard"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.SubscriptionInCartTest -->
+      <class name="com.adactinhotelapp.tests.CategoryProductsTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="appLaunch"/>
+          <include name="teardown"/>
+          <include name="testCategoryProducts"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.CategoryProductsTest -->
+      <class name="com.adactinhotelapp.tests.VerifySubscriptionInHomePageTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="appLaunch"/>
+          <include name="teardown"/>
+          <include name="verifySucbscriptionInHomepage"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.VerifySubscriptionInHomePageTest -->
+      <class name="com.adactinhotelapp.tests.UserRegistrationTest">
+        <methods>
+          <include name="loginOrSignUp"/>
+          <include name="closeBrowser"/>
+          <include name="appLaunch"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.UserRegistrationTest -->
+      <class name="com.adactinhotelapp.tests.InvalidLoginTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="invalidLogin"/>
+          <include name="appLaunch"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.InvalidLoginTest -->
+      <class name="com.adactinhotelapp.tests.VerifyProductQuantityInCartTest">
+        <methods>
+          <include name="verifyProductQuantity"/>
+          <include name="closeBrowser"/>
+          <include name="appLaunch"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.VerifyProductQuantityInCartTest -->
+      <class name="com.adactinhotelapp.tests.BrandProductsTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="testBrandProducts"/>
+          <include name="appLaunch"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.BrandProductsTest -->
+      <class name="com.adactinhotelapp.tests.RemoveProductsTest">
+        <methods>
+          <include name="testRemoveProductsFromCart"/>
+          <include name="closeBrowser"/>
+          <include name="teardown"/>
+          <include name="appLaunch"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.RemoveProductsTest -->
+      <class name="com.adactinhotelapp.base.BaseTest">
+        <methods>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.base.BaseTest -->
+      <class name="com.adactinhotelapp.tests.SearchProductTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="searchProduct"/>
+          <include name="appLaunch"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.SearchProductTest -->
+      <class name="com.adactinhotelapp.tests.CheckoutLoginTest">
+        <methods>
+          <include name="testCheckoutLoginFlow"/>
+          <include name="closeBrowser"/>
+          <include name="appLaunch"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.CheckoutLoginTest -->
+      <class name="com.adactinhotelapp.tests.ContactUsTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="teardown"/>
+          <include name="appLaunch"/>
+          <include name="contactUs"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.ContactUsTest -->
+      <class name="com.adactinhotelapp.tests.PlaceOrderRegisterWithCheckoutTest">
+        <methods>
+          <include name="placeOrderRegisterWithCheckout"/>
+          <include name="closeBrowser"/>
+          <include name="teardown"/>
+          <include name="appLaunch"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.PlaceOrderRegisterWithCheckoutTest -->
+      <class name="com.adactinhotelapp.tests.AddProductsInCartTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="addProductsInCart"/>
+          <include name="teardown"/>
+          <include name="appLaunch"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.AddProductsInCartTest -->
+      <class name="com.adactinhotelapp.tests.ExistingEmailRegisterTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="teardown"/>
+          <include name="appLaunch"/>
+          <include name="registrationTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.ExistingEmailRegisterTest -->
+      <class name="com.adactinhotelapp.tests.TestCasesTest">
+        <methods>
+          <include name="testCases"/>
+          <include name="closeBrowser"/>
+          <include name="teardown"/>
+          <include name="appLaunch"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.TestCasesTest -->
+      <class name="com.adactinhotelapp.tests.PlaceOrderRegisterBeforeCheckoutTest">
+        <methods>
+          <include name="placeOrderRegisterBeforeCheckout"/>
+          <include name="closeBrowser"/>
+          <include name="appLaunch"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.PlaceOrderRegisterBeforeCheckoutTest -->
+      <class name="com.adactinhotelapp.tests.LogOutTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="appLaunch"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="logOutTest"/>
+        </methods>
+      </class> <!-- com.adactinhotelapp.tests.LogOutTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

@@ -1,0 +1,131 @@
+**********************
+Resume Building
+******************************************************
+Freshers (Manual + Selenium Automation)
+Keep it 1 page or max 2 page 
+
+========================================================
+Manual : 
+- Test Case Designs 
+- Test Scenarios 
+- Bug Reporting 
+- SDLC  (Agile Methodlogies - Scrum Framework 
+- STLC 
+- Defect Cycle 
+- Regression 
+- Smoke/Sanity 
+
+Tools : JIRA , Cucumber Studio / Zephyr 
+
+SQL Basics ( comfortable in writing queries upto joins concepts)
+
+- API Testing (Postman) 
+
+==> Academic Projects(optional) / Training Projects (Must)
+
+Manual Testing Project 
+e.g  Adactin Hotel App / Orange HRM / open cart 
+all above are web-based hotel/e-commerce / HRM management 
+========================================================
+Automation : 
+- Selenium WebDriver 
+- TestNG / JUNIT 
+- Page Object Model
+- Maven / Gradle 
+- Java 
+- Rest Assure (add-on)
+- Appium (add-on)
+
+Tools : 
+
+Eclipse / IntelliJ , Maven (build tool) , Git / GitHub (Version Controlling) , Jenkins (CI/CD)
+Windows OS , MAC OS , Linux OS 
+
+Certification :
+
+FLM Certified , ISTQB , Udemy Course 
+
+Framework : 
+- Hybrid (Data Driven + Keyword + POM design pattern with TestNG)
+- BDD (Cucumber + POM design pattern with Junit) 
+
+
+--> Interships / Workshops (if any) 
+
+--> Achivement (optional) 
+   (Hackathons , Coding competitions or test automation mini-projects)
+   
+******************************************************
+Experience (Manual + Selenium Automation)
+Keep it 1 page or max 2 page 
+
+========================================================
+
+let say 1 to 2 years  - 1 Automation 
+
+whole experience on both Manul + Automation
+
+let say 3 years  - 1 or 2 Automation 
+
+1 year Manul + 2 year Automation 
+
+let say 4 years  - 1 or 2 Automation 
+
+2 year Manual + 2 years Automation 
+
+let say 5 years  - 2 Automation projects 
+
+2 year Manual + 3 years Automation 
+
+===================================
+Professional Summary (3-4 lines)
+
+Skills Section : 
+Manual Testing : 
+- Test Case Designs 
+- Test Scenarios 
+- Bug Reporting 
+- SDLC  (Agile Methodlogies - Scrum Framework 
+- STLC 
+- Defect Cycle 
+- Regression 
+- Smoke/Sanity 
+- UAT Support 
+- Exploratory Testing 
+
+Automation Testing : 
+- Selenium WebDriver 
+- TestNG / JUNIT 
+- Page Object Model
+- Maven / Gradle 
+- Java 
+-GIT /GITHUB 
+- Rest Assure (add-on)
+- Appium (add-on)
+- BrowserStack or Sauce Labs 
+
+
+tools : 
+JIRA , Postman , Cucumber studio , Zephyr , SQL Workbench ,Eclipse / IntelliJ ,  Android Studio , XCode ,
+Rest Assured
+
+
+Professional or Work Experience : 
+reverse chronological order 
+
+For Each Project : 
+- Project Desscription 
+- Role / Responsibilities 
+- Tools 
+
+for Manual Project :
+
+Test Strategy / Test plan / Test Execution 
+
+for Automation project : 
+- Framework 
+- Data Driven test (Excel or CSV )
+- Jenkins CI/CD pipelines 
+- Performed cross-browser testing on Chrome , firefox and Edge 
+
+ 
