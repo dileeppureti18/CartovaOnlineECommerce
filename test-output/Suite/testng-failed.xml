@@ -3,15 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.adactinhotelapp.tests.BrandProductsTest">
+      <class name="com.adactinhotelapp.tests.SearchAndVerifyCartTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="testBrandProducts"/>
           <include name="appLaunch"/>
           <include name="teardown"/>
+          <include name="testSearchAndVerifyCart"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.adactinhotelapp.tests.BrandProductsTest -->
+      </class> <!-- com.adactinhotelapp.tests.SearchAndVerifyCartTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
