@@ -19,9 +19,9 @@
         <span class="ms-3 fs-6">Adactint Hotel App Regression UI Automation</span>
       </div>
       <div>
-        <span class="badge badge-outline text-lg"><i class="bi bi-hourglass me-1"></i> 4s</span>
-        <span class="badge badge-outline text-lg"><i class="bi bi-clock me-1 text-success"></i> 2026-05-06 04:21:38 pm</span>
-        <span class="badge badge-outline text-lg me-3"><i class="bi bi-clock me-1 text-danger"></i> 2026-05-06 04:21:42 pm</span>
+        <span class="badge badge-outline text-lg"><i class="bi bi-hourglass me-1"></i> 27s</span>
+        <span class="badge badge-outline text-lg"><i class="bi bi-clock me-1 text-success"></i> 2026-05-08 10:57:26 am</span>
+        <span class="badge badge-outline text-lg me-3"><i class="bi bi-clock me-1 text-danger"></i> 2026-05-08 10:57:53 am</span>
           <button role="button" id="sys-info" class="btn btn-outline-primary smaller" title="View System Info">
             <i class="bi bi-pc-display-horizontal"></i></button>
         <button role="button" id="shortcuts" class="btn btn-outline-primary smaller" title="Shortcuts">
@@ -38,7 +38,7 @@
           <div class="col-4">
             <div class="card card-custom" style="height: 175px">
               <div class="card-header">
-                Classes
+                Suites
               </div>
               <div class="card-body d-flex justify-content-center" style="height: 90px;">
                 <div class="chart-view center" style="margin-left: -1rem;">
@@ -55,7 +55,7 @@
           <div class="col-4">
             <div class="card card-custom" style="height: 175px">
               <div class="card-header">
-                Methods
+                Classes
               </div>
               <div class="card-body d-flex justify-content-center" style="height: 90px;">
                 <div class="chart-view center" style="margin-left: -1rem;">
@@ -69,34 +69,23 @@
               </div>
             </div>
           </div>
-              <div class="col-4">
-                <div class="card card-custom" style="height: 175px">
-                  <div class="card-header mb-2">
-                    Summary
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col text-center">
-                        <label class="fs-10">Started</label>
-                        <p class="fw-semibold mb-0">
-                          2026-05-06 04:21:38 pm
-                        </p>
-                      </div>
-                      <div class="col border-start text-center">
-                        <label class="fs-10">Ended</label>
-                        <p class="fw-semibold mb-0">2026-05-06 04:21:42 pm
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                        <div class="progress" role="progressbar" aria-label="Success example"
-                          aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                          <div class="progress-bar bg-success" style="width: 100%">100%</div>
-                        </div>
+            <div class="col-4">
+              <div class="card card-custom" style="height: 175px">
+                <div class="card-header">
+                  Methods
+                </div>
+                <div class="card-body d-flex justify-content-center" style="height: 90px;">
+                  <div class="chart-view center" style="margin-left: -1rem;">
+                    <canvas id="stats3"></canvas>
                   </div>
                 </div>
+                <div class="card-footer small">
+                  <span id="sp3">1</span> Passed,
+                  <span id="sf3">0</span> Failed,
+                  <span id="ss3">0</span> Skipped
+                </div>
               </div>
+            </div>
         </div>
       </div>
     </div>
@@ -125,11 +114,11 @@
             <div class="col-4">
               <h6 class="mb-3 testname fs-6 passed">Suite</h6>
               <div class="small">
-                <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 3s</span>
+                <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 26s</span>
                 <span class="badge text-bg-info"><i class="bi bi-clock me-1"></i>
-                  2026-05-06 04:21:38 pm</span>
+                  2026-05-08 10:57:26 am</span>
                 <span class="badge text-bg-warning"><i class="bi bi-clock me-1"></i>
-                  2026-05-06 04:21:42 pm</span>
+                  2026-05-08 10:57:53 am</span>
               </div>
               
             </div>
@@ -142,10 +131,33 @@
                         <span class="fs-6 ms-2">com.adactinhotelapp.tests.SearchAndVerifyCartTest</span>
                       </div>
                       <div>
-                        <span class="badge text-dark bg-light">357ms</span>
+                        <span class="badge text-dark bg-light">23s</span>
                       </div>
                     </div>
                     
+  <div class="mt-3 border-top">
+    <div class="leaf passed pb-1 logs-toggle">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">testSearchAndVerifyCart <i role="button" class="bi bi-caret-down-fill text-muted small"></i></span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">14s</span>
+        </div>
+      </div>
+      <p class="desc">[{Logged in As=cred, Email=cefir28081@daerdy.com, Password=Welcome@123}]</p>
+        <div class="mt-3 logs d-none">
+          <pre class="pb-0">
+Starting browser  chrome
+Chrome browser has been started
+App has been launched using url https://automationexercise.com/
+Properties file has been initialized
+Browser closed ...
+          </pre>
+        </div>
+    </div>
+  </div>
 
                   </div>
                 </div>
@@ -169,7 +181,12 @@
         { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
         { result: 'Skipped', count: 0, bg: 'rgb(13, 202, 240)' }
       ];
-      const stats3 = null;
+      const stats3Annotation = {'total': 1, 'passed': 1};
+      const stats3 = [
+        { result: 'Passed', count: 1, bg: 'rgb(140, 197, 83)' },
+        { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
+        { result: 'Skipped', count: 0, bg: 'rgb(13, 202, 240)' }
+      ];
      
   </script>
     <script src="https://cdn.jsdelivr.net/gh/anshooarora/chaintest@976b9706b4d752a6262a041a68a6ea08012e0fcf/cdn/simple/version/chaintest-pkg.js"></script>

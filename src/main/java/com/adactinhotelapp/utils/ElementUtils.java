@@ -160,6 +160,6 @@ public class ElementUtils {
 	 */
 	public void scrollUsingActionsClass(WebElement element) {
 		Actions actions = new Actions(driver);
-		actions.scrollToElement(element).build().perform();
+		actions.moveToElement(element).build().perform();
 	}
 }

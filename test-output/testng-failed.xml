@@ -6,9 +6,9 @@
       <class name="com.adactinhotelapp.tests.SearchAndVerifyCartTest">
         <methods>
           <include name="closeBrowser"/>
+          <include name="testSearchAndVerifyCart" invocation-numbers="0"/>
           <include name="appLaunch"/>
           <include name="teardown"/>
-          <include name="testSearchAndVerifyCart"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.adactinhotelapp.tests.SearchAndVerifyCartTest -->
